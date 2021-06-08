@@ -1,41 +1,45 @@
-# Assignment-3-2-template 
-## Nicole Kenigsberg - 316299031, Naor Saraf - 305715781
+# Assignment-3-2 - Football Association Management System
 
-### Link to out github project:
-https://github.com/Web-Development-Environments-2021/assignment-3-2-305715781_316299031
+- ### Overview
+  - [API](#api)
+  - [Database](#database)
+  - [Navigator](#navigator)
+  - [About](#about)
+  - [Register](#register)
+  - [Login](#login)
+  - [Homepage](#homepage)
 
-### Link to out API:
-https://app.swaggerhub.com/apis/naorsa198/simple-inventory_api/1.0.0
  
+## API
+ Link to out API:
+ https://app.swaggerhub.com/apis/nicolekenig/Football/1.0.0
+## Database
+ to login to out DB:
+- api token: 3hE3qLqssMKTJMEps2Qd3mYyBW43M1UaZyG1FHTAcfcMJIK1jyKGf8lpe4yB
+- server name: footballleaguesql.database.windows.net
+- username: nicole
+- password: rXs4gfkg
 
-### About:
-* To login as the Football Association Representor type:
-  
-  username: NicoleKenig
-  
-  password: nicole@26
+## Navigator
+- In process...
 
-* .env details to login to out DB:
-  
-  tedious_userName=nicole
+## About
+- In process...
 
-  tedious_password=rXs4gfkg 
+## Register
+- route: http://localhost:{port}/Register
+- all users who register will be automatically a fan-user(non admin)
 
-  tedious_server=footballleaguesql.database.windows.net
-
-  tedious_database=LeagueDB
-
-  options: {
-      encrypt: true,
-      enableArithAbort: true
+## Login
+- route: http://localhost:{port}/login
+- if you wish to login as an admin then please fill as follow:
+    ```
+    {
+        "username": "NicoleKenig"
+        "password": "nicole@26"
     }
+    ``` 
+- otherwise you may login with another registered user you created yourself.
 
-    COOKIE_SECRET=shalom
-
-    api_token=3hE3qLqssMKTJMEps2Qd3mYyBW43M1UaZyG1FHTAcfcMJIK1jyKGf8lpe4yB
-
-* We have implemented the bonus part:
-   - [x] add and get user favorite team,player and game
-   - [x] adding game results
-   - [x] adding events to games
-   
+## Homepage
+- route: http://localhost:{port}/
